@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "imageName": "icon_mine_ hometown",
+        "listName": "我的家乡"
+    },
+    {
+        "id": 2,
+        "imageName": "icon_mine_order",
+        "listName": "我的订单"
+    },
+    {
+        "id": 3,
+        "imageName": "icon_mine_health",
+        "listName": "我的健康"
+    },
+    {
+        "id": 4,
+        "imageName": "icon_mine_message",
+        "listName": "我的出行"
+    },
+    {
+        "id": 5,
+        "imageName": "icon_mine_bankcard",
+        "listName": "我的银行卡"
+    }
+]
