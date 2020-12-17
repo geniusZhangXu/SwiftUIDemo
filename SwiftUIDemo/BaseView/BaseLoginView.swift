@@ -14,6 +14,7 @@ struct Background<Content: View>: View {
     private var content: Content
 
     init(@ViewBuilder content: @escaping () -> Content) {
+        
         self.content = content()
     }
 
@@ -31,7 +32,6 @@ struct BaseLoginView: View {
     @Binding var isPresented:Bool
     
     @State private var isAvailablePhoneNumber = false
-    
     @State var userName:String
     @State var passWord:String
     
@@ -60,8 +60,6 @@ struct BaseLoginView: View {
                         
                         print("onCommit:\(self.userName)")
                     }
-                    
-                    
                     /// textFiled的 style
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     ///.keyboardType(.default)

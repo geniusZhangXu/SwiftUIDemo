@@ -17,17 +17,15 @@ struct MineView: View {
     var title:String
     /// 是否跳转登录
     @State private var isPresented = false
-    
+    ///
     @EnvironmentObject var action:NavigationAction
     
-    /// @State var list:[Int] = []
-    
-    //如果整个项目的List都需要设背景的话，可以把init里面的代码移到AppDelegate.swift的didFinishLaunchingWithOptions启动函数里
+    ///如果整个项目的List都需要设背景的话，可以把init里面的代码移到AppDelegate.swift的didFinishLaunchingWithOptions启动函数里
     /*若非要设置整个List的背景色 就先按照下面方式设置在设置List
-     background(
+    background(
         /// edgesIgnoringSafeArea安全区域管理
         Color.orange.edgesIgnoringSafeArea(.all)
-     )
+    )
     init(){
         UITableView.appearance().backgroundColor = .clear
         UITableViewCell.appearance().backgroundColor = .clear
@@ -43,7 +41,7 @@ struct MineView: View {
                 
                 VStack{
 
-                    MineHeaderView(image: Image("yukon_charleyrivers"))
+                    MineHeaderView(image: Image("icybay"))
                         .frame(width: 300, height: 100, alignment: .center)
                         .offset(x: 0, y: 0)
 
@@ -53,6 +51,24 @@ struct MineView: View {
                         /// toggle函数的解释 切换
                         /// Use this method to toggle a Boolean value from `true` to `false` or from`false` to `true`.
                         self.isPresented.toggle()
+                        
+                        ///
+                        testFunction { () -> String in
+                            /// 这里可以省略 return 关键字
+                            ///
+                            return "张旭"
+                        }
+                        self.testFunction {
+                            return "张旭1"
+                        }
+                        
+                        self.testBuilder {
+                            "1"
+                            "2"
+                            "3"
+                            "4"
+                        }
+                        
                     }, label: {
 
                         Text("登录")
@@ -68,17 +84,16 @@ struct MineView: View {
                     MineAccentListView()
                         .frame(width: 300, height: 40, alignment: .center)
                         .offset(x: 0, y: 50)
-                
-                }.frame(width: 300, height: 250, alignment: .center)
 
+                }.frame(width: 300, height: 250)
+                
                 /// List
                 List{
                     
                     ForEach(mineListData){ listData in
 
-                        NavigationLink.init(destination: MineListDetailView(mineModel:listData).environmentObject(self.action),
-                            label:{
-                                
+                        NavigationLink.init(destination: MineListDetailView(mineModel:listData).environmentObject(self.action),label:{
+
                             MineListRowView(liseModel: listData)
                         })
                     }
@@ -86,15 +101,43 @@ struct MineView: View {
                 /// 可以观察下不设置这个属性的时候List是什么样子
                 /// 要是加载在 HStack里面，在默认模式下上下左右会有间距
                 .listStyle(PlainListStyle())
-                .navigationTitle(title)
                 /*
                 .onAppear{
                     _ = (0...30).map{ _ in
                         self.list.append(Int.random(in: 0...50))
                     }
                 }*/
-            }
+            }.navigationTitle(title)
         }
+    }
+}
+
+// MARK: -
+extension MineView{
+    
+    /// 参数为空返回值为String类型闭包参数content
+    /// - Parameter content: content description
+    func testFunction(_ content: () -> String) {
+        /// 打印闭包执行回调的String返回值
+        print(content())
+    }
+    
+    /// @TestBuilder模拟@ViewBuilder
+    /// - Parameter content: content description
+    func testBuilder(@TestBuilder _ content:() -> [String]){
+        
+        print(content())
+    }
+}
+
+@_functionBuilder struct TestBuilder {
+    
+    /// String... 参数 数量可变,你可以传入任意数量的参数
+    /// - Parameter items: items description
+    /// - Returns: description
+    static func buildBlock(_ items: String...) -> [String] {
+        
+        return items
     }
 }
 

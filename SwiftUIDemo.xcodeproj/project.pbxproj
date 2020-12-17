@@ -26,8 +26,8 @@
 		340FE1022587118F00C8AE5E /* MineAccentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340FE0FB2587118F00C8AE5E /* MineAccentListView.swift */; };
 		340FE1032587118F00C8AE5E /* MineListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340FE0FC2587118F00C8AE5E /* MineListDetailView.swift */; };
 		340FE1042587118F00C8AE5E /* MineListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340FE0FD2587118F00C8AE5E /* MineListRowView.swift */; };
-		340FE109258711A900C8AE5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 340FE108258711A900C8AE5E /* Assets.xcassets */; };
 		340FE111258711C800C8AE5E /* MineListData.json in Resources */ = {isa = PBXBuildFile; fileRef = 340FE110258711C800C8AE5E /* MineListData.json */; };
+		340FE1162587163600C8AE5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 340FE1152587163600C8AE5E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,8 +73,8 @@
 		340FE0FB2587118F00C8AE5E /* MineAccentListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineAccentListView.swift; sourceTree = "<group>"; };
 		340FE0FC2587118F00C8AE5E /* MineListDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineListDetailView.swift; sourceTree = "<group>"; };
 		340FE0FD2587118F00C8AE5E /* MineListRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineListRowView.swift; sourceTree = "<group>"; };
-		340FE108258711A900C8AE5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../SwiftUIObj/SwiftUIObj/SwiftUIObj/Resource/Assets.xcassets; sourceTree = "<group>"; };
 		340FE110258711C800C8AE5E /* MineListData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MineListData.json; sourceTree = "<group>"; };
+		340FE1152587163600C8AE5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,8 +167,8 @@
 		340FE0CE2587112300C8AE5E /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				340FE1152587163600C8AE5E /* Assets.xcassets */,
 				340FE110258711C800C8AE5E /* MineListData.json */,
-				340FE108258711A900C8AE5E /* Assets.xcassets */,
 				340FE0A6258710C800C8AE5E /* Info.plist */,
 			);
 			path = Resource;
@@ -351,8 +351,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				340FE0A5258710C800C8AE5E /* Preview Assets.xcassets in Resources */,
+				340FE1162587163600C8AE5E /* Assets.xcassets in Resources */,
 				340FE111258711C800C8AE5E /* MineListData.json in Resources */,
-				340FE109258711A900C8AE5E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
