@@ -16,10 +16,9 @@ struct MineListRowView: View {
         HStack{
             
             Image(liseModel.imageName)
-                .foregroundColor(.yellow)
-            
             Text(liseModel.listName)
                 .accentColor(.black)
+                .font(.system(size: 14))
         }
     }
 }

@@ -1,0 +1,243 @@
+{
+    "id": 0,
+    
+    "bannerImages":[
+        "twinlake",
+        "umbagog",
+        "stmarylake",
+        "silversalmoncreek",
+        "lakemcdonald"
+    ],
+    
+    "serviceCircle":[
+       [{
+           "id": 0,
+           "imageName": "城市黄页",
+           "serviceName": "城市黄页"
+       },
+       {
+           "id": 1,
+           "imageName": "出租",
+           "serviceName": "出租"
+       },
+       {
+           "id": 2,
+           "imageName": "创业贷款",
+           "serviceName": "创业贷款"
+       },
+       {
+           "id": 3,
+           "imageName": "电费缴费",
+           "serviceName": "电费缴费"
+       },
+       {
+           "id": 4,
+           "imageName": "电商扶贫",
+           "serviceName": "电商扶贫"
+       },
+       {
+           "id": 5,
+           "imageName": "法律书库",
+           "serviceName": "法律书库"
+       },
+       {
+           "id": 6,
+           "imageName": "费用查询",
+           "serviceName": "费用查询"
+       },
+       {
+           "id": 7,
+           "imageName": "公积金",
+           "serviceName": "公积金"
+       },
+       {
+           "id": 8,
+           "imageName": "公交",
+           "serviceName": "公交"
+       },
+       {
+           "id": 9,
+           "imageName": "航班",
+           "serviceName": "航班"
+       }],
+       [{
+           "id": 0,
+           "imageName": "火车",
+           "serviceName": "火车"
+       },
+       {
+           "id": 1,
+           "imageName": "家校互动",
+           "serviceName": "家校互动"
+       },
+       {
+           "id": 2,
+           "imageName": "健康关怀",
+           "serviceName": "健康关怀"
+       },
+       {
+           "id": 3,
+           "imageName": "健康体检",
+           "serviceName": "健康体检"
+       },
+       {
+           "id": 4,
+           "imageName": "景点门票",
+           "serviceName": "景点门票"
+       },
+       {
+           "id": 5,
+           "imageName": "空气质量",
+           "serviceName": "空气质量"
+       },
+       {
+           "id": 6,
+           "imageName": "门诊报告",
+           "serviceName": "门诊报告"
+       },
+       {
+           "id": 7,
+           "imageName": "农合",
+           "serviceName": "农合"
+       },
+       {
+           "id": 8,
+           "imageName": "普法学习",
+           "serviceName": "普法学习"
+       },
+       {
+           "id": 9,
+           "imageName": "汽车",
+           "serviceName": "汽车"
+       }],
+       [{
+           "id": 0,
+           "imageName": "燃气查询",
+           "serviceName": "燃气查询"
+       },
+       {
+           "id": 1,
+           "imageName": "社保",
+           "serviceName": "社保"
+       },
+       {
+           "id": 2,
+           "imageName": "食在阜南",
+           "serviceName": "食在阜南"
+       },
+       {
+           "id": 3,
+           "imageName": "水费缴费",
+           "serviceName": "水费缴费"
+       },
+       {
+           "id": 4,
+           "imageName": "违章缴费",
+           "serviceName": "违章缴费"
+       },
+       {
+           "id": 5,
+           "imageName": "学历证书",
+           "serviceName": "学历证书"
+       },
+       {
+           "id": 6,
+           "imageName": "药店信息",
+           "serviceName": "药店信息"
+       },
+       {
+           "id": 7,
+           "imageName": "医保目录",
+           "serviceName": "医保目录"
+       },
+       {
+           "id": 8,
+           "imageName": "预约办事",
+           "serviceName": "预约办事"
+       },
+       {
+           "id": 9,
+           "imageName": "在线影像",
+           "serviceName": "在线影像"
+       }]
+    ],
+    
+    "serviceList":[
+    
+        {
+            "id": 0,
+            "imageName": "预约挂号",
+            "serviceName": "预约挂号"
+        },
+        {
+            "id": 1,
+            "imageName": "预约办事",
+            "serviceName": "预约办事"
+        },
+        {
+            "id": 2,
+            "imageName": "药店信息",
+            "serviceName": "药店信息"
+        },
+        {
+            "id": 3,
+            "imageName": "诊疗记录",
+            "serviceName": "诊疗记录"
+        },
+        {
+            "id": 4,
+            "imageName": "智能导诊",
+            "serviceName": "智能导诊"
+        },
+        {
+            "id": 5,
+            "imageName": "住院报告",
+            "serviceName": "住院报告"
+        },
+        {
+            "id": 6,
+            "imageName": "门诊报告",
+            "serviceName": "门诊报告"
+        }
+    ],
+    
+    
+    "snapshotList":[
+    
+        {
+            "id": 0,
+            "imageName": "chilkoottrail",
+            "snapshotName": "#莲湖公园"
+        },
+        {
+            "id": 1,
+            "imageName": "chincoteague",
+            "snapshotName": "#落日余晖#"
+        },
+        {
+            "id": 2,
+            "imageName": "hiddenlake",
+            "snapshotName": "#冰天雪地"
+        },
+        {
+            "id": 3,
+            "imageName": "icybay",
+            "snapshotName": "#雪山#"
+        },
+        {
+            "id": 4,
+            "imageName": "lakemcdonald",
+            "snapshotName": "#山顶"
+        },
+        {
+            "id": 5,
+            "imageName": "silversalmoncreek",
+            "snapshotName": "#天河公园"
+        },
+        {
+            "id": 6,
+            "imageName": "stmarylake",
+            "snapshotName": "#我的家"
+        }
+    ]
+}
