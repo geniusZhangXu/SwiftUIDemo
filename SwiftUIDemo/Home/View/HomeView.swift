@@ -13,17 +13,16 @@ struct HomeView: View {
     
     /// viewModel
     private let homeViewModel:HomeViewModel = HomeViewModel()
-    
     /// 导航标题
     var title:String
-
+    /// 
     var body: some View {
         
         NavigationView{
             
             ScrollView(showsIndicators:false,content: {
         
-                /// 顶部Banner视图
+                /// Banner视图
                 HomeBannerView()
                     .environmentObject(homeViewModel)
                 
@@ -32,11 +31,19 @@ struct HomeView: View {
                    width: homeViewModel.homeServiceCircleWidth,
                   height: homeViewModel.homeServiceCircleHeight)
                     .environmentObject(homeViewModel)
+                    .offset(y: -5)
+                
+                /// 滚动头条
+                HomeCircleNewsView().frame(
+                    width: homeViewModel.homeNewsCircleWidth,
+                   height: homeViewModel.homeNewsCircleHeight)
+                    .environmentObject(homeViewModel)
                 
                 /// 四个按钮
                 HomeButtonView().frame(
                     width: homeViewModel.homeButtonViewWidth,
                    height: homeViewModel.homeButtonViewHeight)
+                    .offset(y: -5)
                 
                 /// 服务列
                 HomeServiceListView().frame(

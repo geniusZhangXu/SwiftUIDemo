@@ -67,7 +67,7 @@ struct BaseLoginView: View {
                     
                     /// password
                     Text("please enter the password").bold()
-                    TextField.init("password", text: $passWord) { (value) in
+                    TextField("password", text: $passWord) { (value) in
                         
                     } onCommit: {
                         

@@ -7,9 +7,11 @@
 
 import Foundation
 
-struct HomeModel: Hashable, Codable, Identifiable  {
+struct HomeModel: Hashable, Codable, Identifiable {
     
     var id: Int
+    ///
+    var newsArray: Array<Array<String>>
     ///
     var bannerImages: Array<String>
     /// 服务列表数据

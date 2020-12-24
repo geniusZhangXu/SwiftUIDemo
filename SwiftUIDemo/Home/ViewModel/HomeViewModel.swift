@@ -10,21 +10,25 @@ import SwiftUI
 
 final class HomeViewModel: ObservableObject {
     
-    /// 服务Banner-Size
+    /// Banner-Size
     public let homeBannerWidth  = kScreenWidth - 30
     public let homeBannerHeight:CGFloat = 150
     
     /// 服务Circle-Size
     public let homeServiceCircleWidth  = kScreenWidth
-    public let homeServiceCircleHeight:CGFloat = 180.0
+    public let homeServiceCircleHeight:CGFloat = 190.0
     
     /// 服务列表Size
     public let homeServiceViewWidth  = kScreenWidth - 30
-    public let homeServiceViewHeight:CGFloat = 130.0
+    public let homeServiceViewHeight:CGFloat = 120.0
 
     /// 四个按钮Size
     public let homeButtonViewWidth  = kScreenWidth - 30
-    public let homeButtonViewHeight:CGFloat = 70.0
+    public let homeButtonViewHeight:CGFloat = 65.0
+    
+    /// CircleNews-Size
+    public let homeNewsCircleWidth  = kScreenWidth - 30
+    public let homeNewsCircleHeight:CGFloat = 50
     
     /// 首页Model
     private let homeModel:HomeModel = load("HomeData.json")
@@ -43,6 +47,13 @@ final class HomeViewModel: ObservableObject {
          */
         return [homeModel.bannerImages.last!] + homeModel.bannerImages +
                [homeModel.bannerImages.first!]
+    }
+    
+    /// 新闻循环数据
+    private var homeNewsArray:Array<Array<String>>{
+        
+        return [homeModel.newsArray.last!] + homeModel.newsArray +
+               [homeModel.newsArray.first!]
     }
 }
 
@@ -63,6 +74,46 @@ extension HomeViewModel{
         
         return homeBannerArray[indexPath]
     }
+}
+
+
+// MARK: - news
+extension HomeViewModel{
+    
+    ///
+    /// - Returns: description
+    func homeNewsCount() -> NSInteger {
+        
+        return homeNewsArray.count
+    }
+    
+    ///
+    /// - Parameter indexPath: indexPath description
+    /// - Returns: description
+    func homeNewsTitle(_ indexPath:IndexPath) -> String {
+        
+        let newsArray = homeNewsArray[indexPath.section]
+        return newsArray[indexPath.row]
+    }
+    
+    /// 默认的偏移index
+    /// - Returns: description
+    func homeNewsDefaultOffSetY() -> CGFloat {
+    
+        /// 偶数
+        if (homeNewsArray.count % 2) == 0 {
+            
+            let offsetIndex = CGFloat((homeNewsArray.count - 3)/2)
+            /// 10 是默认的mews之间间隔
+            return (offsetIndex * homeNewsCircleHeight) + (offsetIndex * 10)
+        /// 奇数
+        }else{
+            
+            let offsetIndex = CGFloat((homeNewsArray.count - 1)/2)
+            return ((offsetIndex - 0.5) * homeNewsCircleHeight) + ((offsetIndex - 0.5) * 10) + (0.5 * homeNewsCircleHeight)
+        }
+    }
+    
 }
 
 // MARK: -

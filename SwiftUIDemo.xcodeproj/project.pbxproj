@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3400734F2593149600E95061 /* AroundMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3400734E2593149600E95061 /* AroundMapView.swift */; };
+		34007357259318B800E95061 /* AroundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34007356259318B800E95061 /* AroundViewModel.swift */; };
 		340FE09E258710C400C8AE5E /* SwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340FE09D258710C400C8AE5E /* SwiftUIDemoApp.swift */; };
 		340FE0A5258710C800C8AE5E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 340FE0A4258710C800C8AE5E /* Preview Assets.xcassets */; };
 		340FE0B0258710C800C8AE5E /* SwiftUIDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340FE0AF258710C800C8AE5E /* SwiftUIDemoTests.swift */; };
@@ -27,6 +29,8 @@
 		340FE1042587118F00C8AE5E /* MineListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340FE0FD2587118F00C8AE5E /* MineListRowView.swift */; };
 		340FE111258711C800C8AE5E /* MineListData.json in Resources */ = {isa = PBXBuildFile; fileRef = 340FE110258711C800C8AE5E /* MineListData.json */; };
 		340FE1162587163600C8AE5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 340FE1152587163600C8AE5E /* Assets.xcassets */; };
+		342276D025931D6F0095511C /* BaseLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342276CF25931D6F0095511C /* BaseLocationViewModel.swift */; };
+		342276D8259432EF0095511C /* AroundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342276D7259432EF0095511C /* AroundModel.swift */; };
 		3485C35425908C22005A2FC9 /* HomeBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485C35325908C22005A2FC9 /* HomeBannerView.swift */; };
 		3485C3592590925F005A2FC9 /* MarcoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485C3582590925F005A2FC9 /* MarcoUtils.swift */; };
 		3485C35E2590967C005A2FC9 /* BaseServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485C35D2590967C005A2FC9 /* BaseServiceView.swift */; };
@@ -63,6 +67,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3400734E2593149600E95061 /* AroundMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AroundMapView.swift; sourceTree = "<group>"; };
+		34007356259318B800E95061 /* AroundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AroundViewModel.swift; sourceTree = "<group>"; };
 		340FE09A258710C400C8AE5E /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		340FE09D258710C400C8AE5E /* SwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoApp.swift; sourceTree = "<group>"; };
 		340FE0A4258710C800C8AE5E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -89,6 +95,8 @@
 		340FE0FD2587118F00C8AE5E /* MineListRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineListRowView.swift; sourceTree = "<group>"; };
 		340FE110258711C800C8AE5E /* MineListData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MineListData.json; sourceTree = "<group>"; };
 		340FE1152587163600C8AE5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		342276CF25931D6F0095511C /* BaseLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLocationViewModel.swift; sourceTree = "<group>"; };
+		342276D7259432EF0095511C /* AroundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AroundModel.swift; sourceTree = "<group>"; };
 		3485C35325908C22005A2FC9 /* HomeBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBannerView.swift; sourceTree = "<group>"; };
 		3485C3582590925F005A2FC9 /* MarcoUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarcoUtils.swift; sourceTree = "<group>"; };
 		3485C35D2590967C005A2FC9 /* BaseServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServiceView.swift; sourceTree = "<group>"; };
@@ -132,6 +140,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		340073532593188D00E95061 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				34007356259318B800E95061 /* AroundViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		340073542593189500E95061 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				340FE0E82587118000C8AE5E /* AroundView.swift */,
+				3400734E2593149600E95061 /* AroundMapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		340073552593189900E95061 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				342276D7259432EF0095511C /* AroundModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		340FE091258710C400C8AE5E = {
 			isa = PBXGroup;
 			children = (
@@ -230,7 +263,9 @@
 		340FE0E72587118000C8AE5E /* Around */ = {
 			isa = PBXGroup;
 			children = (
-				340FE0E82587118000C8AE5E /* AroundView.swift */,
+				340073552593189900E95061 /* Model */,
+				340073542593189500E95061 /* View */,
+				340073532593188D00E95061 /* ViewModel */,
 			);
 			path = Around;
 			sourceTree = "<group>";
@@ -325,6 +360,7 @@
 			isa = PBXGroup;
 			children = (
 				34C036F42591A73C00C044C6 /* BaseServiceModel.swift */,
+				342276CF25931D6F0095511C /* BaseLocationViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -492,6 +528,7 @@
 				340FE0FF2587118F00C8AE5E /* MineLiseModel.swift in Sources */,
 				340FE1002587118F00C8AE5E /* MineView.swift in Sources */,
 				3485C3592590925F005A2FC9 /* MarcoUtils.swift in Sources */,
+				34007357259318B800E95061 /* AroundViewModel.swift in Sources */,
 				340FE1012587118F00C8AE5E /* MineHeaderView.swift in Sources */,
 				340FE0E32587117400C8AE5E /* HomeView.swift in Sources */,
 				3485C35E2590967C005A2FC9 /* BaseServiceView.swift in Sources */,
@@ -503,6 +540,7 @@
 				340FE1042587118F00C8AE5E /* MineListRowView.swift in Sources */,
 				34C036F52591A73C00C044C6 /* BaseServiceModel.swift in Sources */,
 				34DE0BA72590FC580095CFE6 /* HomeServiceCircleView.swift in Sources */,
+				3400734F2593149600E95061 /* AroundMapView.swift in Sources */,
 				34C037062591CB8100C044C6 /* HomeViewModel.swift in Sources */,
 				340FE0DA2587116A00C8AE5E /* BaseTabbarView.swift in Sources */,
 				340FE1022587118F00C8AE5E /* MineAccentListView.swift in Sources */,
@@ -510,10 +548,12 @@
 				3485C36B2590A50F005A2FC9 /* HomeSnapshotView.swift in Sources */,
 				3485C35425908C22005A2FC9 /* HomeBannerView.swift in Sources */,
 				340FE0DC2587116A00C8AE5E /* BaseNavigationView.swift in Sources */,
+				342276D025931D6F0095511C /* BaseLocationViewModel.swift in Sources */,
 				34DE0BB22590FD4E0095CFE6 /* UIColorExtension.swift in Sources */,
 				340FE0EF2587118600C8AE5E /* ServiceView.swift in Sources */,
 				34DE0B962590FAD30095CFE6 /* HomeServiceListView.swift in Sources */,
 				349A81222590F7B700D19230 /* HomeModel.swift in Sources */,
+				342276D8259432EF0095511C /* AroundModel.swift in Sources */,
 				340FE0E92587118000C8AE5E /* AroundView.swift in Sources */,
 				340FE1032587118F00C8AE5E /* MineListDetailView.swift in Sources */,
 				3485C3782590ACB1005A2FC9 /* HomeCircleNewsView.swift in Sources */,

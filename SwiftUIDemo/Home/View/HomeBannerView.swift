@@ -30,7 +30,7 @@ struct HomeBannerView: View {
         /// 单个子视图偏移量 = 单个视图宽度 + 视图的间距
         let currentOffset = CGFloat(currentIndex) * (homeViewModel.homeBannerWidth + spacing)
         /// GeometryReader 改变了它显示内容的方式。在 iOS 13.5 中，内容放置方式为 .center。在 iOS 14.0 中则为：.topLeading
-        GeometryReader.init(content: { geometry in
+        GeometryReader(content: { geometry in
           
             HStack(spacing: spacing){
                 
@@ -49,13 +49,12 @@ struct HomeBannerView: View {
                         /// 自己尝试一下.fill和.fit
                         .aspectRatio(contentMode: .fill)
                         .frame(width: geometry.size.width,
-                               height: geometry.size.height)
+                               height: $0 == currentIndex ? geometry.size.height:geometry.size.height*0.8 )
                         .clipped() /// 裁减
                         .cornerRadius(10)
-                    
                 }
-            }.frame(width: geometry.size.width,
-                   height: geometry.size.height,alignment:.leading)
+            }.frame(width:geometry.size.width,
+                   height:geometry.size.height,alignment:.leading)
              .offset(x: dragOffset - currentOffset)
              .gesture(dragGesture)
              /// 绑定是否需要动画
@@ -67,12 +66,12 @@ struct HomeBannerView: View {
                 /// 第一张的时候
                 if value == 0 {
                     
-                    isAnimation = false
+                    isAnimation.toggle()
                     currentIndex = homeViewModel.homeBannerCount() - 2
                 /// 最后一张的时候currentIndex设置为1关闭动画
                 }else if value == homeViewModel.homeBannerCount() - 1 {
                     
-                    isAnimation = false
+                    isAnimation.toggle()
                     currentIndex = 1
                 }
              })
@@ -82,7 +81,7 @@ struct HomeBannerView: View {
              })
             
         }).frame(width: homeViewModel.homeBannerWidth,
-                height: homeViewModel.homeBannerHeight )
+                height: homeViewModel.homeBannerHeight)
     }
 }
 

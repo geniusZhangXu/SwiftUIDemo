@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct BaseTabbarView: View {
     
@@ -31,7 +32,8 @@ struct BaseTabbarView: View {
                 }
                 .tag(0)
             
-            ServiceView(title: String.Common.around)
+            AroundView(title: String.Common.around)
+                .environmentObject(AroundViewModel.shared)
                 .tabItem {
                     Image(selectedTab == 1 ? String.Image.icon_around_selected : String.Image.icon_around)
                     Text(String.Common.around)
@@ -41,7 +43,7 @@ struct BaseTabbarView: View {
                 }
                 .tag(1)
             
-            AroundView(title: String.Common.service)
+            ServiceView(title: String.Common.service)
                 .tabItem {
                     Image(selectedTab == 2 ? String.Image.icon_service_selected : String.Image.icon_service)
                     Text(String.Common.service)

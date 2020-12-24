@@ -15,7 +15,7 @@ struct HomeSnapshotView: View {
        
         VStack(alignment: .leading, content: {
             
-            Text("最美的风景").font(.system(size: 14))
+            Text("最美风景").font(.system(size: 14))
             
             ScrollView.init(.horizontal, showsIndicators:false, content:{
                 

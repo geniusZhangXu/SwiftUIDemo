@@ -19,9 +19,9 @@ struct BaseServiceView: View {
             Image(serviceName).scaleEffect(0.4)
             Text(serviceImage).font(.system(size: 12))
                 .offset(x: 0, y: -30)
-            /// 只有英文效果器作用
+            /// 只有英文效果起作用
             /// Text("Hello, world!").italic()
-        }.frame(width: 70, height: 85, alignment: .center)
+        }.frame(width: 60, height: 85, alignment: .center)
     }
 }
 
