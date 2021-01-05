@@ -17,7 +17,7 @@ struct HomeSnapshotView: View {
             
             Text("最美风景").font(.system(size: 14))
             
-            ScrollView.init(.horizontal, showsIndicators:false, content:{
+            ScrollView(.horizontal, showsIndicators:false, content:{
                 
                 HStack(alignment: .center,spacing: 15, content:{
                     

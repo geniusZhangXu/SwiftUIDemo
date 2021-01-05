@@ -19,7 +19,7 @@ struct HomeServiceListView: View {
             Text("医疗卫生").font(.system(size: 14))
                 .offset(x: 2)
                 
-            ScrollView.init(.horizontal, showsIndicators: false, content: {
+            ScrollView(.horizontal, showsIndicators: false, content: {
                 
                 HStack(alignment:.center,spacing: 5){
                     

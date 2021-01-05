@@ -13,7 +13,7 @@ struct HomeBannerView: View {
     
     /// SwiftUI对定时器的简化，可以进去看看具体参数的定义
     private let timer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
-
+    
     /// 拖拽的偏移量
     @State var dragOffset: CGFloat = .zero
     ///当前显示的位置索引,
@@ -22,7 +22,7 @@ struct HomeBannerView: View {
     @State var currentIndex: Int = 1
     /// 是否需要动画
     @State var isAnimation: Bool = true
-
+     
     let spacing: CGFloat = 10
     
     var body: some View {
@@ -31,7 +31,7 @@ struct HomeBannerView: View {
         let currentOffset = CGFloat(currentIndex) * (homeViewModel.homeBannerWidth + spacing)
         /// GeometryReader 改变了它显示内容的方式。在 iOS 13.5 中，内容放置方式为 .center。在 iOS 14.0 中则为：.topLeading
         GeometryReader(content: { geometry in
-          
+            
             HStack(spacing: spacing){
                 
                 ForEach(0..<homeViewModel.homeBannerCount()){
@@ -114,7 +114,6 @@ extension HomeBannerView{
                 /// 防止越界
                 currentIndex = max(min(currentIndex, homeViewModel.homeBannerCount() - 1), 0)
             }
-        
     }
 }
 

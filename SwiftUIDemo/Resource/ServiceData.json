@@ -1,0 +1,303 @@
+[
+    {
+        "id": 0,
+        "sectionTitle": "交通出行",
+        "serviceArray": [
+            [{
+                "id":0,
+                "imageName":"公交",
+                "serviceName":"公交"
+            },{
+                "id":1,
+                "imageName":"火车",
+                "serviceName":"火车"
+            },{
+                "id":2,
+                "imageName":"航班",
+                "serviceName":"航班"
+            },{
+                "id":3,
+                "imageName":"汽车",
+                "serviceName":"汽车"
+            }],
+            [{
+                "id":0,
+                "imageName":"出租",
+                "serviceName":"出租"
+            },{
+                "id":1,
+                "imageName":"违章缴费",
+                "serviceName":"违章缴费"
+            }]
+        ]
+    },
+    {
+        "id": 1,
+        "sectionTitle": "医疗卫生",
+        "serviceArray": [
+            [{
+                "id":0,
+                "imageName":"预约挂号",
+                "serviceName":"预约挂号"
+            },{
+                "id":1,
+                "imageName":"药店信息",
+                "serviceName":"药店信息"
+            },{
+                "id":2,
+                "imageName":"智能导诊",
+                "serviceName":"智能导诊"
+            },{
+                "id":3,
+                "imageName":"诊疗记录",
+                "serviceName":"诊疗记录"
+            }],
+            [{
+                "id":0,
+                "imageName":"门诊报告",
+                "serviceName":"门诊报告"
+            },{
+                "id":1,
+                "imageName":"住院报告",
+                "serviceName":"住院报告"
+            },{
+                "id":2,
+                "imageName":"费用查询",
+                "serviceName":"费用查询"
+            },{
+                "id":3,
+                "imageName":"在线影像",
+                "serviceName":"在线影像"
+            }],
+            [{
+                "id":0,
+                "imageName":"健康体检",
+                "serviceName":"健康体检"
+            },
+            {
+                "id":1,
+                "imageName":"健康关怀",
+                "serviceName":"健康关怀"
+            },
+            {
+                "id":2,
+                "imageName":"医保目录",
+                "serviceName":"医保目录"
+            }]
+        ]
+    },
+    {
+        "id": 2,
+        "sectionTitle": "生活缴费",
+        "serviceArray": [
+            [{
+                "id":0,
+                "imageName":"水费缴费",
+                "serviceName":"水费缴费"
+            },{
+                "id":1,
+                "imageName":"燃气查询",
+                "serviceName":"燃气查询"
+            },{
+                "id":2,
+                "imageName":"电费缴费",
+                "serviceName":"电费缴费"
+            },{
+                "id":3,
+                "imageName":"水费缴费",
+                "serviceName":"水费缴费"
+            }]
+        ]
+    },
+    {
+        "id": 3,
+        "sectionTitle": "便民生活",
+        "serviceArray": [
+            [{
+                "id":0,
+                "imageName":"空气质量",
+                "serviceName":"空气质量"
+            },{
+                "id":1,
+                "imageName":"景点门票",
+                "serviceName":"景点门票"
+            },{
+                "id":2,
+                "imageName":"电商扶贫",
+                "serviceName":"电商扶贫"
+            },{
+                "id":3,
+                "imageName":"食在阜南",
+                "serviceName":"食在阜南"
+            }],
+            [{
+                "id":0,
+                "imageName":"找工作",
+                "serviceName":"找工作"
+            },{
+                "id":1,
+                "imageName":"重名查询",
+                "serviceName":"重名查询"
+            },{
+                "id":2,
+                "imageName":"创业贷款",
+                "serviceName":"创业贷款"
+            },{
+                "id":3,
+                "imageName":"城市黄页",
+                "serviceName":"城市黄页"
+            }],
+            [{
+                "id":0,
+                "imageName":"外出填报",
+                "serviceName":"外出填报"
+            },{
+                "id":1,
+                "imageName":"在线办事",
+                "serviceName":"在线办事"
+            },{
+                "id":2,
+                "imageName":"预约办事",
+                "serviceName":"预约办事"
+            }]
+        ]
+    },
+    {
+        "id": 4,
+        "sectionTitle": "政务综合",
+        "serviceArray": [
+            [{
+                "id":0,
+                "imageName":"电子商务",
+                "serviceName":"电子商务"
+            },{
+                "id":1,
+                "imageName":"建档立卡",
+                "serviceName":"建档立卡"
+            },{
+                "id":2,
+                "imageName":"河长制",
+                "serviceName":"河长制"
+            },{
+                "id":3,
+                "imageName":"智慧水利",
+                "serviceName":"智慧水利"
+            }]
+        ]
+    },
+    {
+        "id": 5,
+        "sectionTitle": "最美阜南",
+        "serviceArray": [
+            [{
+                "id":0,
+                "imageName":"随手拍",
+                "serviceName":"随手拍"
+            },{
+                "id":1,
+                "imageName":"发现",
+                "serviceName":"发现"
+            },{
+                "id":2,
+                "imageName":"乡村美景",
+                "serviceName":"乡村美景"
+            },{
+                "id":3,
+                "imageName":"乡间寻味",
+                "serviceName":"乡间寻味"
+            }]
+        ]
+    },
+    {
+        "id": 6,
+        "sectionTitle": "文化教育",
+        "serviceArray": [
+            [{
+                "id":0,
+                "imageName":"家校互动",
+                "serviceName":"家校互动"
+            },{
+                "id":1,
+                "imageName":"学历证书",
+                "serviceName":"学历证书"
+            },{
+                "id":2,
+                "imageName":"家校互动",
+                "serviceName":"家校互动"
+            },{
+                "id":3,
+                "imageName":"学历证书",
+                "serviceName":"学历证书"
+            }]
+        ]
+    },
+    {
+        "id": 7,
+        "sectionTitle": "全民普法",
+        "serviceArray": [
+            [{
+                "id":0,
+                "imageName":"普法学习",
+                "serviceName":"普法学习"
+            },{
+                "id":1,
+                "imageName":"法律书库",
+                "serviceName":"法律书库"
+            },{
+                "id":2,
+                "imageName":"普法学习",
+                "serviceName":"普法学习"
+            },{
+                "id":3,
+                "imageName":"法律书库",
+                "serviceName":"法律书库"
+            }]
+        ]
+    },
+    {
+        "id": 8,
+        "sectionTitle": "人事社保",
+        "serviceArray": [
+            [{
+                "id":0,
+                "imageName":"公积金",
+                "serviceName":"公积金"
+            },{
+                "id":1,
+                "imageName":"社保",
+                "serviceName":"社保"
+            },{
+                "id":2,
+                "imageName":"新农合缴费",
+                "serviceName":"新农合缴费"
+            },{
+                "id":3,
+                "imageName":"社保",
+                "serviceName":"社保"
+            }]
+        ]
+    },
+    {
+        "id": 9,
+        "sectionTitle": "政民互动",
+        "serviceArray": [
+            [{
+                "id":0,
+                "imageName":"书记信箱",
+                "serviceName":"书记信箱"
+            },{
+                "id":1,
+                "imageName":"县长信箱",
+                "serviceName":"县长信箱"
+            },{
+                "id":2,
+                "imageName":"百姓热线",
+                "serviceName":"百姓热线"
+            },{
+                "id":3,
+                "imageName":"全民社管",
+                "serviceName":"全民社管"
+            }]
+        ]
+    }
+]

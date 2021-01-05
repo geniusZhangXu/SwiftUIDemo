@@ -3,7 +3,7 @@
 //  SwiftUIDemo
 //
 //  Created by Zhangxu on 2020/12/21.
-//
+//  Jetpack Compose 安卓全新的UI开发框架
 
 import SwiftUI
 
@@ -18,16 +18,16 @@ struct HomeCircleNewsView: View {
     ///所以这里默认从1开始
     @State var currentIndex: Int = 1
     /// 是否需要动画
-    @State var isAnimation: Bool = true
+    /// @State var isAnimation: Bool = true
 
     let spacing: CGFloat = 10
     
     var body: some View {
         
         let currentOffset = CGFloat(currentIndex) * (homeViewModel.homeNewsCircleHeight + spacing)
-        
+        ///
         GeometryReader(content: { geometry in
-          
+            
             VStack(spacing:spacing){
                 
                 ForEach(0..<homeViewModel.homeNewsCount()){index in
@@ -38,7 +38,6 @@ struct HomeCircleNewsView: View {
                         Text(homeViewModel.homeNewsTitle(firstIndex))
                              .frame(height: geometry.size.height/2)
                             .font(.system(size: 14))
-
                         
                         let secondIndex = IndexPath(row: 1,section: index)
                         Text(homeViewModel.homeNewsTitle(secondIndex))
@@ -49,17 +48,17 @@ struct HomeCircleNewsView: View {
             }.frame(width: geometry.size.width,
                    height: geometry.size.height)
             .offset(y:homeViewModel.homeNewsDefaultOffSetY() - currentOffset)
-            .animation(isAnimation ? .spring() : .none)
+            ///.animation(isAnimation ? .spring() : .none)
             .onChange(of: currentIndex, perform: { value in
                 
-                isAnimation = true
+                ///isAnimation = true
                 if currentIndex == 0 {
                     
-                    isAnimation.toggle()
+                    ///isAnimation.toggle()
                     currentIndex = homeViewModel.homeNewsCount() - 2
                 }else if currentIndex == homeViewModel.homeNewsCount() - 1{
                     
-                    isAnimation.toggle()
+                    ///isAnimation.toggle()
                     currentIndex = 1
                 }
             })

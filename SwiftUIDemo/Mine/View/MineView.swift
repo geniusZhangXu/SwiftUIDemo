@@ -38,7 +38,7 @@ struct MineView: View {
         NavigationView{
             
             VStack{
-                
+
                 VStack{
 
                     MineHeaderView(image: Image("icybay"))
@@ -51,24 +51,22 @@ struct MineView: View {
                         /// toggle函数的解释 切换
                         /// Use this method to toggle a Boolean value from `true` to `false` or from`false` to `true`.
                         self.isPresented.toggle()
-                        
-                        ///
+
+                        /*
                         testFunction { () -> String in
                             /// 这里可以省略 return 关键字
-                            ///
                             return "张旭"
                         }
                         self.testFunction {
-                            return "张旭1"
+                            return "张旭---"
                         }
-                        
                         self.testBuilder {
                             "1"
                             "2"
                             "3"
                             "4"
-                        }
-                        
+                        }*/
+
                     }, label: {
 
                         Text("登录")
@@ -77,7 +75,7 @@ struct MineView: View {
                     }).offset(x: 0, y: 40)
                       .sheet(isPresented: $isPresented, content: {
 
-                        BaseLoginView(isPresented: $isPresented, userName: "", passWord: "")
+                        BaseLoginView(isPresented: $isPresented)
                     })
 
                     /// 强调的ListView
@@ -92,22 +90,23 @@ struct MineView: View {
                     
                     ForEach(mineListData){ listData in
 
-                        NavigationLink.init(destination: MineListDetailView(mineModel:listData).environmentObject(self.action),label:{
+                        NavigationLink(destination: MineListDetailView(mineModel:listData).environmentObject(self.action),label:{
 
                             MineListRowView(liseModel: listData)
                         })
                     }
-                }.offset(x: 0, y: 20)
+                }.offset(y: 20)
                 /// 可以观察下不设置这个属性的时候List是什么样子
                 /// 要是加载在 HStack里面，在默认模式下上下左右会有间距
                 .listStyle(PlainListStyle())
+                .navigationTitle(title)
                 /*
                 .onAppear{
                     _ = (0...30).map{ _ in
                         self.list.append(Int.random(in: 0...50))
                     }
                 }*/
-            }.navigationTitle(title)
+            }
         }
     }
 }

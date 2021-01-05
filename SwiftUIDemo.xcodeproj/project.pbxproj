@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		3400734F2593149600E95061 /* AroundMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3400734E2593149600E95061 /* AroundMapView.swift */; };
 		34007357259318B800E95061 /* AroundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34007356259318B800E95061 /* AroundViewModel.swift */; };
+		3400755A2599B22000B63938 /* ServiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340075592599B22000B63938 /* ServiceViewModel.swift */; };
+		3400755F2599B28700B63938 /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3400755E2599B28700B63938 /* ServiceModel.swift */; };
+		340075642599B75A00B63938 /* ServiceData.json in Resources */ = {isa = PBXBuildFile; fileRef = 340075632599B75A00B63938 /* ServiceData.json */; };
 		340FE09E258710C400C8AE5E /* SwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340FE09D258710C400C8AE5E /* SwiftUIDemoApp.swift */; };
 		340FE0A5258710C800C8AE5E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 340FE0A4258710C800C8AE5E /* Preview Assets.xcassets */; };
 		340FE0B0258710C800C8AE5E /* SwiftUIDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340FE0AF258710C800C8AE5E /* SwiftUIDemoTests.swift */; };
@@ -31,6 +34,8 @@
 		340FE1162587163600C8AE5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 340FE1152587163600C8AE5E /* Assets.xcassets */; };
 		342276D025931D6F0095511C /* BaseLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342276CF25931D6F0095511C /* BaseLocationViewModel.swift */; };
 		342276D8259432EF0095511C /* AroundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342276D7259432EF0095511C /* AroundModel.swift */; };
+		342B22EB25A2B9C7002B3DAE /* ServiceSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342B22EA25A2B9C7002B3DAE /* ServiceSectionView.swift */; };
+		342B22F025A2C117002B3DAE /* ServiceSectionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342B22EF25A2C117002B3DAE /* ServiceSectionItemView.swift */; };
 		3485C35425908C22005A2FC9 /* HomeBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485C35325908C22005A2FC9 /* HomeBannerView.swift */; };
 		3485C3592590925F005A2FC9 /* MarcoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485C3582590925F005A2FC9 /* MarcoUtils.swift */; };
 		3485C35E2590967C005A2FC9 /* BaseServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485C35D2590967C005A2FC9 /* BaseServiceView.swift */; };
@@ -69,6 +74,9 @@
 /* Begin PBXFileReference section */
 		3400734E2593149600E95061 /* AroundMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AroundMapView.swift; sourceTree = "<group>"; };
 		34007356259318B800E95061 /* AroundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AroundViewModel.swift; sourceTree = "<group>"; };
+		340075592599B22000B63938 /* ServiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceViewModel.swift; sourceTree = "<group>"; };
+		3400755E2599B28700B63938 /* ServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
+		340075632599B75A00B63938 /* ServiceData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ServiceData.json; sourceTree = "<group>"; };
 		340FE09A258710C400C8AE5E /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		340FE09D258710C400C8AE5E /* SwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoApp.swift; sourceTree = "<group>"; };
 		340FE0A4258710C800C8AE5E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -97,6 +105,8 @@
 		340FE1152587163600C8AE5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		342276CF25931D6F0095511C /* BaseLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLocationViewModel.swift; sourceTree = "<group>"; };
 		342276D7259432EF0095511C /* AroundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AroundModel.swift; sourceTree = "<group>"; };
+		342B22EA25A2B9C7002B3DAE /* ServiceSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceSectionView.swift; sourceTree = "<group>"; };
+		342B22EF25A2C117002B3DAE /* ServiceSectionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceSectionItemView.swift; sourceTree = "<group>"; };
 		3485C35325908C22005A2FC9 /* HomeBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBannerView.swift; sourceTree = "<group>"; };
 		3485C3582590925F005A2FC9 /* MarcoUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarcoUtils.swift; sourceTree = "<group>"; };
 		3485C35D2590967C005A2FC9 /* BaseServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServiceView.swift; sourceTree = "<group>"; };
@@ -230,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				340FE1152587163600C8AE5E /* Assets.xcassets */,
+				340075632599B75A00B63938 /* ServiceData.json */,
 				340FE110258711C800C8AE5E /* MineListData.json */,
 				34C0370A2591D0DE00C044C6 /* HomeData.json */,
 				340FE0A6258710C800C8AE5E /* Info.plist */,
@@ -273,7 +284,9 @@
 		340FE0ED2587118600C8AE5E /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				340FE0EE2587118600C8AE5E /* ServiceView.swift */,
+				342276DE2599AFF00095511C /* Model */,
+				342276DD2599AFEB0095511C /* View */,
+				342276DC2599AFE20095511C /* ViewModel */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -314,6 +327,32 @@
 				340FE0FD2587118F00C8AE5E /* MineListRowView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		342276DC2599AFE20095511C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				340075592599B22000B63938 /* ServiceViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		342276DD2599AFEB0095511C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				340FE0EE2587118600C8AE5E /* ServiceView.swift */,
+				342B22EA25A2B9C7002B3DAE /* ServiceSectionView.swift */,
+				342B22EF25A2C117002B3DAE /* ServiceSectionItemView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		342276DE2599AFF00095511C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3400755E2599B28700B63938 /* ServiceModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		349A811B2590F77F00D19230 /* Model */ = {
@@ -496,6 +535,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34C0370B2591D0DE00C044C6 /* HomeData.json in Resources */,
+				340075642599B75A00B63938 /* ServiceData.json in Resources */,
 				340FE0A5258710C800C8AE5E /* Preview Assets.xcassets in Resources */,
 				340FE1162587163600C8AE5E /* Assets.xcassets in Resources */,
 				340FE111258711C800C8AE5E /* MineListData.json in Resources */,
@@ -527,6 +567,7 @@
 				34DE0BB72590FD670095CFE6 /* ColorUtils.swift in Sources */,
 				340FE0FF2587118F00C8AE5E /* MineLiseModel.swift in Sources */,
 				340FE1002587118F00C8AE5E /* MineView.swift in Sources */,
+				3400755A2599B22000B63938 /* ServiceViewModel.swift in Sources */,
 				3485C3592590925F005A2FC9 /* MarcoUtils.swift in Sources */,
 				34007357259318B800E95061 /* AroundViewModel.swift in Sources */,
 				340FE1012587118F00C8AE5E /* MineHeaderView.swift in Sources */,
@@ -541,7 +582,9 @@
 				34C036F52591A73C00C044C6 /* BaseServiceModel.swift in Sources */,
 				34DE0BA72590FC580095CFE6 /* HomeServiceCircleView.swift in Sources */,
 				3400734F2593149600E95061 /* AroundMapView.swift in Sources */,
+				3400755F2599B28700B63938 /* ServiceModel.swift in Sources */,
 				34C037062591CB8100C044C6 /* HomeViewModel.swift in Sources */,
+				342B22F025A2C117002B3DAE /* ServiceSectionItemView.swift in Sources */,
 				340FE0DA2587116A00C8AE5E /* BaseTabbarView.swift in Sources */,
 				340FE1022587118F00C8AE5E /* MineAccentListView.swift in Sources */,
 				340FE0DD2587116A00C8AE5E /* BaseExtension.swift in Sources */,
@@ -552,6 +595,7 @@
 				34DE0BB22590FD4E0095CFE6 /* UIColorExtension.swift in Sources */,
 				340FE0EF2587118600C8AE5E /* ServiceView.swift in Sources */,
 				34DE0B962590FAD30095CFE6 /* HomeServiceListView.swift in Sources */,
+				342B22EB25A2B9C7002B3DAE /* ServiceSectionView.swift in Sources */,
 				349A81222590F7B700D19230 /* HomeModel.swift in Sources */,
 				342276D8259432EF0095511C /* AroundModel.swift in Sources */,
 				340FE0E92587118000C8AE5E /* AroundView.swift in Sources */,
