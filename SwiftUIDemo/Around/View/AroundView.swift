@@ -23,21 +23,20 @@ struct AroundView: View {
         
         NavigationView{
             
-            /// 
-            GeometryReader.init(content: { geometry in
+            GeometryReader(content: { geometry in
                 
                 VStack{
-                    
                     /// 地图
                     AroundMapView(tappedCallback:{ tapPoint in
+                        
                         /// 在数组添加数据
                         aroundViewModel.addLocationWithTap(tapPoint)
-                        
                     },centerCoordinate: $aroundViewModel.userLocationCoordinate,
-                      locationArray: $aroundViewModel.userLocationArray).frame(height: 300)
+                         locationArray: $aroundViewModel.userLocationArray)
+                         .frame(height: 300)
                         
                     /// 地址List
-                    List(aroundViewModel.userLocationArray, id: \.self) { model in
+                    List(aroundViewModel.userLocationArray, id: \.self){ model in
                                                     
                         VStack(alignment: .leading, spacing: 5){
                             
@@ -51,11 +50,8 @@ struct AroundView: View {
                                 .font(.system(size: 12))
                                 .foregroundColor(Color(.color_9))
                         }
-                        
                     }.listStyle(PlainListStyle())
-                    
                 }.navigationTitle(title)
-                
             })
         }
     }

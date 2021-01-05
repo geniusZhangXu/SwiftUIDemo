@@ -12,10 +12,9 @@ struct AroundMapView: UIViewRepresentable {
         
     /// 点击回调
     var tappedCallback: ((CLLocationCoordinate2D) -> Void)
-    
-    /// 传入一个需要的位置,以这个位置为重点
+    /// 传入一个需要的位置,以这个位置为基点
     @Binding var centerCoordinate:CLLocationCoordinate2D
-    
+    ///
     @Binding var locationArray:Array<UserLocation>
     
     ///原本想尝试看能不能在updateUIView接收这个返回的View在其他地方使用，但还是我们既然把AroundMapView写成了结构体，那就意味着要在方法里修改变量值就得加mutating修饰，但修饰了这个方法之后就会有没有遵守协议方法的问题，可以把结构体改成类试试

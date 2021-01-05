@@ -77,8 +77,5 @@ extension AroundViewModel {
             self.userLocationArray.append(locationModel)
             print("aroundLocationIndex-2：",self.userLocationArray)
         }
-
     }
-    
-    
 }

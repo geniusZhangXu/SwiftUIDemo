@@ -12,7 +12,6 @@ struct ServiceView: View {
     
     /// 标题
     var title:String
-
     ///
     private let serviceViewModel = ServiceViewModel()
     
@@ -23,7 +22,7 @@ struct ServiceView: View {
             ScrollView(content: {
                 
                 HStack(alignment: .top , spacing: 10) {
-                   
+                    
                     List(serviceViewModel.serviceModelArray, id: \.self) { model in
                        
                        Text(model.sectionTitle)
