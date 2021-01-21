@@ -34,10 +34,11 @@ struct AroundMapView: UIViewRepresentable {
     ///   - context: context description
     func updateUIView(_ uiView: MKMapView, context: Context) {
         
+        /// 设置地图显示的一些信息
         let span = MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)
         let region = MKCoordinateRegion(center: centerCoordinate, span: span)
         uiView.setRegion(region, animated: true)
-    
+         
         /// 添加大头针
         addAnimation(uiView, locationArray)
         addTapGestureRecognizer(uiView,context)

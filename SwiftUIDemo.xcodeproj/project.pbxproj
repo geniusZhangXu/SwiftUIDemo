@@ -43,6 +43,7 @@
 		3485C36B2590A50F005A2FC9 /* HomeSnapshotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485C36A2590A50F005A2FC9 /* HomeSnapshotView.swift */; };
 		3485C3782590ACB1005A2FC9 /* HomeCircleNewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485C3772590ACB1005A2FC9 /* HomeCircleNewsView.swift */; };
 		349A81222590F7B700D19230 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349A81212590F7B700D19230 /* HomeModel.swift */; };
+		349ADE5325AD9C2200E29D86 /* HomeBannerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349ADE5225AD9C2200E29D86 /* HomeBannerDetailView.swift */; };
 		34C036F52591A73C00C044C6 /* BaseServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C036F42591A73C00C044C6 /* BaseServiceModel.swift */; };
 		34C037062591CB8100C044C6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C037052591CB8100C044C6 /* HomeViewModel.swift */; };
 		34C0370B2591D0DE00C044C6 /* HomeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 34C0370A2591D0DE00C044C6 /* HomeData.json */; };
@@ -114,6 +115,7 @@
 		3485C36A2590A50F005A2FC9 /* HomeSnapshotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSnapshotView.swift; sourceTree = "<group>"; };
 		3485C3772590ACB1005A2FC9 /* HomeCircleNewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCircleNewsView.swift; sourceTree = "<group>"; };
 		349A81212590F7B700D19230 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		349ADE5225AD9C2200E29D86 /* HomeBannerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBannerDetailView.swift; sourceTree = "<group>"; };
 		34C036F42591A73C00C044C6 /* BaseServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServiceModel.swift; sourceTree = "<group>"; };
 		34C037052591CB8100C044C6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		34C0370A2591D0DE00C044C6 /* HomeData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HomeData.json; sourceTree = "<group>"; };
@@ -374,6 +376,7 @@
 				3485C3652590A4E8005A2FC9 /* HomeButtonView.swift */,
 				34DE0B952590FAD30095CFE6 /* HomeServiceListView.swift */,
 				3485C36A2590A50F005A2FC9 /* HomeSnapshotView.swift */,
+				349ADE5225AD9C2200E29D86 /* HomeBannerDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -601,6 +604,7 @@
 				340FE0E92587118000C8AE5E /* AroundView.swift in Sources */,
 				340FE1032587118F00C8AE5E /* MineListDetailView.swift in Sources */,
 				3485C3782590ACB1005A2FC9 /* HomeCircleNewsView.swift in Sources */,
+				349ADE5325AD9C2200E29D86 /* HomeBannerDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
